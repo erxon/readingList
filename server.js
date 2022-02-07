@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(cors());
 
 //Establish connection to MongoDB Atlas DB
-mongoose.connect(process.env.DB, {
+mongoose.connect("mongodb+srv://e-castasus:test123@cluster0.wbcoa.mongodb.net/readingList?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 });
