@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Titlebar from "./Titlebar";
-import { useParams } from "react-router-dom";
 import axios from "axios";
 
 function AddItem(){
@@ -46,7 +45,6 @@ function AddItem(){
 
     function handleSubmit(event){
         event.preventDefault();
-        let dateObject = new Date();
         
         const newItem = {
             title: input.title,
