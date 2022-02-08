@@ -39,11 +39,10 @@ function MainItem() {
         function getItem(){
             axios.get(url)
             .then((res) => {
-                const data = res.data;
                 setItem({
-                    title: data.title,
-                    content: data.content,
-                    addedAt: data.addedAt.substring(0, 10)
+                    title: res.data.title,
+                    content: res.data.content,
+                    addedAt: res.data.addedAt.substring(0, 10)
                 });
             })
             .catch((err) => console.log(err));
