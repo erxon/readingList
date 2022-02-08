@@ -53,14 +53,20 @@ function EditItem(){
         });
     }
     function handleSubmit(){
-        const updatedItem = {
-            title: item.title,
-            content: item.content,
-            addedAt: item.addedAt,
-            updatedAt: new Date().toString()
-        }
+        // const updatedItem = {
+        //     title: item.title,
+        //     content: item.content,
+        //     addedAt: item.addedAt,
+        //     updatedAt: new Date().toString()
+        // }
+        setItem((prevState) => {
+            return{
+                ...prevState,
+                updatedAt: new Date().toString()
+            }
+        });
 
-        axios.patch("https://serene-lake-49034.herokuapp.com/readings/item/"+itemId, updatedItem)
+        axios.patch("https://serene-lake-49034.herokuapp.com/readings/item/"+itemId, item)
         .then(() => {window.location = "/readings/item/" + itemId})
         .catch((err) => { console.log(err)});
         
