@@ -54,10 +54,10 @@ function AddItem(){
         }
 
         axios.post("https://serene-lake-49034.herokuapp.com/readings/", newItem)
-        .then((res) => console.log(res.data))
+        .then((res) => {window.location = "/"})
         .catch((err) => console.log(err));
 
-        window.location = "/";
+        
     }
     return(
         <div>

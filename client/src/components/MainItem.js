@@ -58,8 +58,6 @@ function MainItem() {
 
         
     }
-
-    console.log(item);
     
     const path = "/readings/edit/"+itemId;
     return (
