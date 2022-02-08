@@ -61,9 +61,8 @@ function EditItem(){
         }
 
         axios.patch("https://serene-lake-49034.herokuapp.com/readings/item/"+itemId, updatedItem)
-        .then(() => {window.location = "/readings/item/" + itemId;})
+        .then(() => {window.location = "/readings/item/" + itemId})
         .catch((err) => { console.log(err)});
-
         
     }
     return(
