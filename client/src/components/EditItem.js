@@ -62,7 +62,7 @@ function EditItem(){
             updatedAt: new Date().toString()
         }
 
-        axios.patch("http://localhost:5000/readings/item/"+itemId, updatedItem)
+        axios.patch("https://serene-lake-49034.herokuapp.com/readings/item/"+itemId, updatedItem)
         .then((res) => { console.log(res)})
         .catch((err) => { console.log(err)});
 
