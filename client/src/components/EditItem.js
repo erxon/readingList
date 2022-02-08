@@ -52,9 +52,7 @@ function EditItem(){
             });
         });
     }
-    function handleSubmit(event){
-        event.preventDefault();
-        
+    function handleSubmit(){
         const updatedItem = {
             title: item.title,
             content: item.content,
@@ -72,7 +70,6 @@ function EditItem(){
         <div>
             <Titlebar />
             <div style={customStyles.editItemForm}>
-                <form onSubmit={handleSubmit}>
                     <p style={customStyles.titleLabel}>Title </p>
                     <input 
                         style={customStyles.titleInput}
@@ -94,8 +91,7 @@ function EditItem(){
                         ></textarea> 
                     </div>
                     
-                    <button type="submit" className="btn mt-3" style={buttonStyle}>Apply</button>
-                </form>
+                    <button onClick={handleSubmit} className="btn mt-3" style={buttonStyle}>Apply</button>
                 
             </div>
         </div>
