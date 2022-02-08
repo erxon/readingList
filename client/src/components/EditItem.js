@@ -63,10 +63,10 @@ function EditItem(){
         }
 
         axios.patch("https://serene-lake-49034.herokuapp.com/readings/item/"+itemId, updatedItem)
-        .then((res) => { console.log(res)})
+        .then(() => {window.location = "/readings/item/" + itemId;})
         .catch((err) => { console.log(err)});
 
-        window.location = "/readings/item/" + itemId;
+        
     }
     return(
         <div>
