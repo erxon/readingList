@@ -11,7 +11,7 @@ export default function Home(){
     
     useEffect(() => {
         function getAllItems(){
-            axios.get("http://localhost:5000/readings/")
+            axios.get("https://serene-lake-49034.herokuapp.com/readings/")
             .then((res) => setItems(res.data.reverse()))
             .catch((err) => console.log(err));
         }

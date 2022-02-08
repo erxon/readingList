@@ -32,7 +32,7 @@ function MainItem() {
         content: "",
         addedAt: ""
     });
-    const url = "http://localhost:5000/readings/item/"+itemId;
+    const url = "https://serene-lake-49034.herokuapp.com/readings/item/"+itemId;
 
 
     useEffect(()=>{

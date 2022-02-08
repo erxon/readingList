@@ -53,7 +53,7 @@ function AddItem(){
             updatedAt: ""
         }
 
-        axios.post("http://localhost:5000/readings/", newItem)
+        axios.post("https://serene-lake-49034.herokuapp.com/readings/", newItem)
         .then((res) => console.log(res.data))
         .catch((err) => console.log(err));
 

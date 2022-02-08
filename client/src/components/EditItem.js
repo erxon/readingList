@@ -30,7 +30,7 @@ function EditItem(){
     };
     const { itemId } = useParams();
     const [item, setItem] = useState({});
-    const url = "http://localhost:5000/readings/item/"+itemId;
+    const url = "https://serene-lake-49034.herokuapp.com/readings/item/"+itemId;
 
     useEffect(()=>{
         function getItem(){
