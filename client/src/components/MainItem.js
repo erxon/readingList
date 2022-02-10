@@ -32,12 +32,10 @@ function MainItem() {
         content: "",
         addedAt: ""
     });
-    const url = "https://serene-lake-49034.herokuapp.com/readings/item/"+itemId;
-
 
     useEffect(()=>{
         function getItem(){
-            axios.get(url)
+            axios.get("https://serene-lake-49034.herokuapp.com/readings/item/"+itemId)
             .then((res) => {
                 setItem({
                     title: res.data.title,
