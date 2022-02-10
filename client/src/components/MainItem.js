@@ -27,15 +27,12 @@ function MainItem() {
         }
     };
     const { itemId } = useParams();
-    const [item, setItem] = useState({
-        title: "",
-        content: "",
-        addedAt: ""
-    });
+    const [item, setItem] = useState({});
+    const url = "https://serene-lake-49034.herokuapp.com/readings/item/"+itemId;
 
     useEffect(()=>{
         function getItem(){
-            axios.get("https://serene-lake-49034.herokuapp.com/readings/item/"+itemId)
+            axios.get(url)
             .then((res) => {
                 setItem({
                     title: res.data.title,
@@ -46,7 +43,7 @@ function MainItem() {
             .catch((err) => console.log(err));
         }
         getItem();
-    }, [item]);
+    }, []);
 
     function handleClick(){
         axios.delete("https://serene-lake-49034.herokuapp.com/readings/item/"+itemId)
