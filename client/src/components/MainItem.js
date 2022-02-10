@@ -57,7 +57,7 @@ function MainItem() {
         
     }
     
-    const path = "https://serene-lake-49034.herokuapp.com/readings/edit/"+itemId;
+    const path = "/readings/edit/"+itemId;
     return (
         <div>
             <Titlebar />
