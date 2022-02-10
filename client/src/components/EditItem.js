@@ -67,7 +67,7 @@ function EditItem(){
         });
 
         axios.patch("https://serene-lake-49034.herokuapp.com/readings/item/"+itemId, item)
-        .then(() => {window.location = "https://serene-lake-49034.herokuapp.com/readings/item/"+itemId})
+        .then(() => {window.location = "https://serene-lake-49034.herokuapp.com/readings/view/"+itemId})
         .catch((err) => { console.log(err)});
         
     }
