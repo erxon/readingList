@@ -16,7 +16,7 @@ function Item(props){
             textDecoration: "none"
         }
     }
-    const path = "/readings/item/" + props.id;
+    const path = "https://serene-lake-49034.herokuapp.com/readings/item/" + props.id;
     return(
         <div style={customStyles.item}>
             <h2>{props.title}</h2>
