@@ -19,7 +19,7 @@ function Library(props){
     return(
         <div style={customStyles.library}>
             <h1 className="me-3" style={customStyles.libraryHeading}>Library</h1>
-            <Link to="/readings/add"><IconButton size="small" sx={{marginBottom: "15px"}} variant="outlined">
+            <Link to="https://serene-lake-49034.herokuapp.com/readings/add"><IconButton size="small" sx={{marginBottom: "15px"}} variant="outlined">
                 <AddCircleOutlineIcon fontSize="large" sx={{color: "#000"}}/>
             </IconButton></Link>
             {props.items.length > 0 ? props.items.map(item => {

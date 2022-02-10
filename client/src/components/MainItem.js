@@ -52,12 +52,12 @@ function MainItem() {
 
     function handleClick(){
         axios.delete("https://serene-lake-49034.herokuapp.com/readings/item/"+itemId)
-        .then(() => { window.location = "/" })
+        .then(() => { window.location = "https://serene-lake-49034.herokuapp.com/" })
         .catch((err) => { console.log(err) });
         
     }
     
-    const path = "/readings/edit/"+itemId;
+    const path = "https://serene-lake-49034.herokuapp.com/readings/edit/"+itemId;
     return (
         <div>
             <Titlebar />

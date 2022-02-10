@@ -10,10 +10,10 @@ function App() {
   return(
     <BrowserRouter>
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/readings/item/:itemId" element={<MainItem />} />
-      <Route path="/readings/add" element={<AddItem />} />
-      <Route path="/readings/edit/:itemId" element={<EditItem />} />
+      <Route path="https://serene-lake-49034.herokuapp.com/" element={<Home />} />
+      <Route path="https://serene-lake-49034.herokuapp.com/readings/item/:itemId" element={<MainItem />} />
+      <Route path="https://serene-lake-49034.herokuapp.com/readings/add" element={<AddItem />} />
+      <Route path="https://serene-lake-49034.herokuapp.com/readings/edit/:itemId" element={<EditItem />} />
     </Routes>
   </BrowserRouter>
   );

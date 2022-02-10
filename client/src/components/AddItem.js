@@ -54,7 +54,7 @@ function AddItem(){
         }
 
         axios.post("https://serene-lake-49034.herokuapp.com/readings/", newItem)
-        .then((res) => {window.location = "/"})
+        .then((res) => {window.location = "https://serene-lake-49034.herokuapp.com/"})
         .catch((err) => console.log(err));
 
         
