@@ -11,7 +11,7 @@ function App() {
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/readings/item/:itemId" element={<MainItem />} />
+      <Route path="/readings/view/:itemId" element={<MainItem />} />
       <Route path="/readings/add" element={<AddItem />} />
       <Route path="/readings/edit/:itemId" element={<EditItem />} />
     </Routes>

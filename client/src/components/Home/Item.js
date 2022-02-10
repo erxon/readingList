@@ -16,7 +16,7 @@ function Item(props){
             textDecoration: "none"
         }
     }
-    const path = "/readings/item/" + props.id;
+    const path = "/readings/view/" + props.id;
     return(
         <div style={customStyles.item}>
             <h2>{props.title}</h2>
