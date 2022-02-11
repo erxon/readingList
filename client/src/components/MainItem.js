@@ -47,7 +47,7 @@ function MainItem() {
 
     function handleClick(){
         axios.delete("https://serene-lake-49034.herokuapp.com/readings/item/"+itemId)
-        .then(() => { window.location = "https://serene-lake-49034.herokuapp.com/" })
+        .then(() => { window.location = "/" })
         .catch((err) => { console.log(err) });
         
     }

@@ -3,7 +3,6 @@ import Titlebar from "./Titlebar";
 import axios from "axios";
 
 function AddItem(){
-    // Make a post request in the server with the state object
     const buttonStyle ={
         backgroundColor: "#47CB62",
         borderRadius: "10px",
@@ -54,7 +53,7 @@ function AddItem(){
         }
 
         axios.post("https://serene-lake-49034.herokuapp.com/readings/", newItem)
-        .then((res) => {window.location = "https://serene-lake-49034.herokuapp.com/"})
+        .then((res) => {window.location = "/"})
         .catch((err) => console.log(err));
 
         

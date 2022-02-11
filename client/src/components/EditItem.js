@@ -53,12 +53,6 @@ function EditItem(){
         });
     }
     function handleSubmit(){
-        // const updatedItem = {
-        //     title: item.title,
-        //     content: item.content,
-        //     addedAt: item.addedAt,
-        //     updatedAt: new Date().toString()
-        // }
         setItem((prevState) => {
             return{
                 ...prevState,
@@ -67,7 +61,7 @@ function EditItem(){
         });
 
         axios.patch("https://serene-lake-49034.herokuapp.com/readings/item/"+itemId, item)
-        .then(() => {window.location = "https://serene-lake-49034.herokuapp.com/readings/view/"+itemId})
+        .then(() => {window.location = "/readings/view/"+itemId})
         .catch((err) => { console.log(err)});
         
     }
